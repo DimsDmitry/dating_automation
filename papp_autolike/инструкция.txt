@@ -1,6 +1,0 @@
-Устанавливаете питон
-https://www.python.org/downloads/ (нужна галочка добавить в path)
-далее в командной строке
-pip install pyautogui
-pip install opencv-python
-запускаете скрипт pure2.py

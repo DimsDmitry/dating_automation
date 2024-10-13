@@ -14,7 +14,9 @@ while True:
         button_like = pyautogui.locateOnScreen(like, confidence=0.7)
         pyautogui.click(button_like)
         likes += 1
-        sleep(randrange(10, 22) / 10)
+        sleep(randrange(10, 22) / 100)
+        if likes % 100 == 0:
+            print('Сделано лайков:', likes)
     except pyautogui.ImageNotFoundException:
         try:
             button_geo = pyautogui.locateOnScreen(geo_accept, confidence=0.7)
@@ -26,7 +28,4 @@ while True:
                 sleep(5)
             except:
                 pyautogui.scroll(-randrange(400, 600))
-
     sleep(0.01)
-
-print('Сделано лайков:', likes)
