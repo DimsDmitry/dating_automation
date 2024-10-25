@@ -14,7 +14,7 @@ while True:
         button_like = pyautogui.locateOnScreen(like, confidence=0.7)
         pyautogui.click(button_like)
         likes += 1
-        sleep(randrange(10, 22) / 100)
+        sleep(randrange(10, 22) / 1000)
         if likes % 100 == 0:
             print('Сделано лайков:', likes)
     except pyautogui.ImageNotFoundException:
