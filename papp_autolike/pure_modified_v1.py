@@ -29,4 +29,4 @@ while True:
                 sleep(5)
             except:
                 pyautogui.scroll(-randrange(400, 600))
-    sleep(0.001) # 0.01
+    sleep(0.0001) # 0.01
